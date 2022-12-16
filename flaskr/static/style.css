@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #202020;
+}
+
+.wrapper .sidebar{
+    background: #101010;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 255px;
+    height: 100%;
+    padding: 55px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile h1{
+    margin: 10px 0 5px;
+}
+.wrapper .sidebar .profile a{
+    font-size: 50px;
+    color: #282828;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    height: 100px;
+    padding: 30px;
+    color: #585858;
+    font-size: 30px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    background: white;
+    color: #282828;
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #282828;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+.wrapper .content {
+    width: 81%;
+    margin-left: 16rem;
+}
+
+.top-menu {
+    height: 90px;
+    background-color: #181818;
+    padding: 25px;
+
+}
+
+.top-menu a {
+    font-size: 30px;
+    color: #808080;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+    padding: 25px;
+}
+
+.top-menu a, h1 {
+    margin-left: 50px;
+}
+
+.posts {
+    padding: 50px;
+}
+
+.post {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #404040;
+    transition: all 1s ease;
+}
+
+.post:hover {
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.post .about {
+    color: #696969;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.form {
+    height: 390px;
+    display: block;
+    border: none;
+    text-align: center;
+}
+.blank {
+    height: 20px;
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+    border: 1px solid #dddfe2;
+    display: block;
+    margin: 20px auto;
+    text-align: left;
+    padding: 14px 10px;
+    width: 500px;
+    height: 60px;
+    outline: none;
+    border-radius: 6px;
+    transition: 0.25s;
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus {
+    border-color: #1877f2;
+}
+
+.form input[type="submit"] {
+    border: 0;
+    background: #696969;
+    display: block;
+    margin:  20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    width: 300px;
+    outline: none;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background: #888888;
+}
+
+.form a {
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    right: 50%;
+}
+.form a:hover {
+    text-decoration: underline;
+}
+
+.flash {
+  margin: 1em 0;
+  padding: 1em;
+  background: #cae6f6;
+  border: 1px solid #377ba8;
+}
+
+.title {
+    color: #808080;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+input.danger {
+  color: #cc2f2e;
+}
+
+.content form {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content label {
+align-self: start;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.content input, .content textarea {
+font-size: 20px;
+  margin-bottom: 1em;
+}
+
+.content textarea {
+  min-height: 12em;
+  resize: vertical;
+}
+
+.form input.danger {
+    background: #cc2f2e;
+}
+
+.form input.danger:hover {
+    background: #823c3c;
+}
+
+input[type=submit] {
+  align-self: start;
+  min-width: 10em;
+}
+
+.action {
+    color: #080808;
+}
